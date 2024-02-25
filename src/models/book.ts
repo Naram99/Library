@@ -1,6 +1,6 @@
 import { Entity } from "./entity";
 
-export class Book<T> implements Entity {
+export class Book implements Entity {
     _id: string;
     _data: Map<string, string>;
 
