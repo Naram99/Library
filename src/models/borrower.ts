@@ -2,11 +2,11 @@ import { Entity } from "./entity";
 
 export class Borrower implements Entity {
     _id: string;
-    _data: Map<string, string>;
+    _data: Map<string, string> = new Map();
 
-    constructor(id: string, data: Map<string, string>){
+    constructor(id: string){
         this._id = id;
-        this._data = data;
+        this._data.set('id', id);
     }
 
     listData(): void {
